@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex items-center">
                     @auth
-                        <span class="text-sm text-gray-700 ml-4">{{ auth()->user()->name }}</span>
+                        <a href="{{ route('profile.show') }}" class="text-sm text-gray-700 mr-4">پروفایل من</a>
                         <a href="{{ route('logout') }}" class="text-sm text-red-600">خروج</a>
                     @else
                         <a href="{{ route('login.form') }}" class="text-sm text-gray-700">ورود</a>
