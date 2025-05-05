@@ -1,0 +1,13 @@
+.env
+.env.local
+.env.*.local
+*.log
+*.sqlite
+/public/storage
+/bootstrap/cache/*.php
+/vendor
+/node_modules
+/.idea
+/.vscode
+/.DS_Store
+/storage/*.key
