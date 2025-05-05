@@ -21,7 +21,10 @@
                     </div>
                 </div>
                 <div class="flex items-center">
-                    @auth
+                   @auth
+                        @if(auth()->user()->role === 'wholesaler')
+                            <a href="{{ route('products.create') }}" class="text-sm text-green-600 mr-4">ثبت محصول</a>
+                        @endif
                         <a href="{{ route('profile.show') }}" class="text-sm text-gray-700 mr-4">پروفایل من</a>
                         <a href="{{ route('logout') }}" class="text-sm text-red-600">خروج</a>
                     @else
